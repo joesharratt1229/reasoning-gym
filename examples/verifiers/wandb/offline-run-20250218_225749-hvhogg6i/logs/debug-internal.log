@@ -1,0 +1,14 @@
+{"time":"2025-02-18T22:57:49.340539236Z","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/ubuntu/reasoning-gym/examples/verifiers/wandb/offline-run-20250218_225749-hvhogg6i/logs/debug-core.log"}
+{"time":"2025-02-18T22:57:49.44479417Z","level":"INFO","msg":"created new stream","id":"hvhogg6i"}
+{"time":"2025-02-18T22:57:49.444864671Z","level":"INFO","msg":"stream: started","id":"hvhogg6i"}
+{"time":"2025-02-18T22:57:49.444876752Z","level":"INFO","msg":"writer: Do: started","stream_id":"hvhogg6i"}
+{"time":"2025-02-18T22:57:49.444907882Z","level":"INFO","msg":"handler: started","stream_id":"hvhogg6i"}
+{"time":"2025-02-18T22:57:49.444956733Z","level":"INFO","msg":"sender: started","stream_id":"hvhogg6i"}
+{"time":"2025-02-18T22:57:49.448801665Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-18T22:57:55.354600287Z","level":"INFO","msg":"stream: closing","id":"hvhogg6i"}
+{"time":"2025-02-18T22:57:55.35466846Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-18T22:57:55.355338861Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-18T22:57:55.355414343Z","level":"INFO","msg":"handler: closed","stream_id":"hvhogg6i"}
+{"time":"2025-02-18T22:57:55.355427094Z","level":"INFO","msg":"writer: Close: closed","stream_id":"hvhogg6i"}
+{"time":"2025-02-18T22:57:55.355437684Z","level":"INFO","msg":"sender: closed","stream_id":"hvhogg6i"}
+{"time":"2025-02-18T22:57:55.355518886Z","level":"INFO","msg":"stream: closed","id":"hvhogg6i"}

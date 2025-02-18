@@ -1,0 +1,14 @@
+{"time":"2025-02-18T19:35:49.466444878Z","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/ubuntu/reasoning-gym/examples/verifiers/wandb/offline-run-20250218_193549-r1o1cvc5/logs/debug-core.log"}
+{"time":"2025-02-18T19:35:49.570656495Z","level":"INFO","msg":"created new stream","id":"r1o1cvc5"}
+{"time":"2025-02-18T19:35:49.570697527Z","level":"INFO","msg":"stream: started","id":"r1o1cvc5"}
+{"time":"2025-02-18T19:35:49.570765838Z","level":"INFO","msg":"handler: started","stream_id":"r1o1cvc5"}
+{"time":"2025-02-18T19:35:49.570752827Z","level":"INFO","msg":"writer: Do: started","stream_id":"r1o1cvc5"}
+{"time":"2025-02-18T19:35:49.570830378Z","level":"INFO","msg":"sender: started","stream_id":"r1o1cvc5"}
+{"time":"2025-02-18T19:35:49.57469033Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-18T19:35:49.823269917Z","level":"INFO","msg":"stream: closing","id":"r1o1cvc5"}
+{"time":"2025-02-18T19:35:49.823301997Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-18T19:35:49.823935478Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-18T19:35:49.82402636Z","level":"INFO","msg":"handler: closed","stream_id":"r1o1cvc5"}
+{"time":"2025-02-18T19:35:49.824038181Z","level":"INFO","msg":"writer: Close: closed","stream_id":"r1o1cvc5"}
+{"time":"2025-02-18T19:35:49.82405875Z","level":"INFO","msg":"sender: closed","stream_id":"r1o1cvc5"}
+{"time":"2025-02-18T19:35:49.824165122Z","level":"INFO","msg":"stream: closed","id":"r1o1cvc5"}

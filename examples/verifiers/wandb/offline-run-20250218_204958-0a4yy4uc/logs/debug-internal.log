@@ -1,0 +1,14 @@
+{"time":"2025-02-18T20:49:58.341872053Z","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/ubuntu/reasoning-gym/examples/verifiers/wandb/offline-run-20250218_204958-0a4yy4uc/logs/debug-core.log"}
+{"time":"2025-02-18T20:49:58.446201667Z","level":"INFO","msg":"created new stream","id":"0a4yy4uc"}
+{"time":"2025-02-18T20:49:58.446245646Z","level":"INFO","msg":"stream: started","id":"0a4yy4uc"}
+{"time":"2025-02-18T20:49:58.446291718Z","level":"INFO","msg":"writer: Do: started","stream_id":"0a4yy4uc"}
+{"time":"2025-02-18T20:49:58.446318499Z","level":"INFO","msg":"handler: started","stream_id":"0a4yy4uc"}
+{"time":"2025-02-18T20:49:58.44636178Z","level":"INFO","msg":"sender: started","stream_id":"0a4yy4uc"}
+{"time":"2025-02-18T20:49:58.451827442Z","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-18T20:50:04.349025758Z","level":"INFO","msg":"stream: closing","id":"0a4yy4uc"}
+{"time":"2025-02-18T20:50:04.349065398Z","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-18T20:50:04.349892054Z","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-18T20:50:04.349954246Z","level":"INFO","msg":"handler: closed","stream_id":"0a4yy4uc"}
+{"time":"2025-02-18T20:50:04.349962455Z","level":"INFO","msg":"writer: Close: closed","stream_id":"0a4yy4uc"}
+{"time":"2025-02-18T20:50:04.349976686Z","level":"INFO","msg":"sender: closed","stream_id":"0a4yy4uc"}
+{"time":"2025-02-18T20:50:04.350057768Z","level":"INFO","msg":"stream: closed","id":"0a4yy4uc"}

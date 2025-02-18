@@ -1,0 +1,41 @@
+{
+  "os":  "Linux-6.8.0-51-generic-x86_64-with-glibc2.35",
+  "python":  "CPython 3.12.9",
+  "startedAt":  "2025-02-18T21:06:30.201599Z",
+  "program":  "/home/ubuntu/reasoning-gym/examples/verifiers/example.py",
+  "codePath":  "examples/verifiers/example.py",
+  "git":  {
+    "remote":  "https://github.com/open-thought/reasoning-gym.git",
+    "commit":  "1fcbc04f01ac048b628d15d2f0664db1029c2cf6"
+  },
+  "root":  "/home/ubuntu/reasoning-gym/examples/verifiers",
+  "host":  "158-101-18-230",
+  "executable":  "/home/ubuntu/miniconda3/bin/python",
+  "codePathLocal":  "example.py",
+  "cpu_count":  30,
+  "cpu_count_logical":  30,
+  "gpu":  "NVIDIA A100-SXM4-40GB",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "532608356352",
+      "used":  "40323764224"
+    }
+  },
+  "memory":  {
+    "total":  "232205742080"
+  },
+  "cpu":  {
+    "count":  30,
+    "countLogical":  30
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100-SXM4-40GB",
+      "memoryTotal":  "42949672960",
+      "cudaCores":  6912,
+      "architecture":  "Ampere"
+    }
+  ],
+  "cudaVersion":  "12.4"
+}
