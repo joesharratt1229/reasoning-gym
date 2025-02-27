@@ -102,7 +102,9 @@ class OpenRouterEvaluator:
                     if output is None:
                         self.logger.error(f"Error in response: {response_text}")
                         raise ValueError("Error in response")
-                    return output
+                    else:
+                        return output
+        raise Exception("Failed to get valid response after retries")
 
     async def process_entry(self, session: aiohttp.ClientSession, dataset: Any, entry: Any) -> dict[str, Any]:
         """Process a single entry with concurrency control."""
