@@ -14,5 +14,5 @@ class ScriptArguments:
     dataset_test_split: str = "test"
     gradient_checkpointing_use_reentrant: bool = False
     ignore_bias_buffers: bool = False
-    train_size: int = 1000
+    train_size: int = 10000
     eval_size: int = 100

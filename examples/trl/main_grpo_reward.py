@@ -11,7 +11,6 @@ import datasets
 import torch
 import transformers
 from grpo_config import ScriptArguments
-from peft import LoraConfig
 from torch.utils.data import Dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
 from transformers.trainer_utils import get_last_checkpoint
@@ -113,14 +112,6 @@ def main(script_args, training_args, model_args):
     ).to("cuda")
     tokenizer = AutoTokenizer.from_pretrained(model_args.model_name_or_path)
     tokenizer.pad_token = tokenizer.eos_token
-
-    peft_config = LoraConfig(
-        r=16,
-        lora_alpha=64,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "up_proj", "down_proj", "gate_proj"],
-        task_type="CAUSAL_LM",
-        lora_dropout=0.05,
-    )
 
     trainer = GRPOTrainerCustom(
         model,
