@@ -1,0 +1,32 @@
+#Model arguments
+model_name_or_path: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+
+
+#script arguments
+dataset_name: spell_backward
+
+#training arguments
+bf16: true
+gradient_accumulation_steps: 4
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+      use_reentrant: false
+optimize_cuda_cache: true
+seed: 42
+eval_seed: 101
+log_level: info
+logging_steps: 10
+logging_strategy: steps
+lr_scheduler_type: cosine
+learning_rate: 2.0e-05
+max_prompt_length: 256
+max_completion_length: 256
+num_generations: 16
+per_device_train_batch_size: 4
+per_device_eval_batch_size: 1
+overwrite_output_dir: true
+use_vllm: true
+num_train_epochs: 1
+max_steps: -1
+push_to_hub: true
+report_to: ['wandb']
