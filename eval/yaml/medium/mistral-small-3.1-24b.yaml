@@ -1,5 +1,5 @@
-model: anthropic/claude-3.5-sonnet
-provider: Anthropic
+model: mistralai/mistral-small-3.1-24b-instruct
+provider: Parasail # bf16 (Mistral's endpoint not working)
 output_dir: results
 max_concurrent: 10
 default_size: 50

@@ -1,5 +1,5 @@
-model: anthropic/claude-3.5-sonnet
-provider: Anthropic
+model: meta-llama/llama-4-maverick
+provider: DeepInfra # fp8
 output_dir: results
 max_concurrent: 10
 default_size: 50

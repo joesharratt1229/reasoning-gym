@@ -1,5 +1,5 @@
-model: anthropic/claude-3.5-sonnet
-provider: Anthropic
+model: google/gemma-3-12b-it
+provider: DeepInfra # bf16
 output_dir: results
 max_concurrent: 10
 default_size: 50
