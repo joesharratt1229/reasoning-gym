@@ -99,6 +99,7 @@ Here is your puzzle:
                 "source_dataset": DATASET_NAME,
                 "source_index": idx,
                 "gamestr": gamestr,
+                "source_dataset": DATASET_NAME,
                 "width": puzzle_data["width"],
                 "height": puzzle_data["height"],
                 "difficulty": {
