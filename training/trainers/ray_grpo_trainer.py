@@ -7,6 +7,7 @@ from copy import deepcopy
 
 import numpy as np
 import torch
+import time
 from omegaconf import OmegaConf, open_dict
 from rewards import reward_registry
 from torchdata.stateful_dataloader import StatefulDataLoader
@@ -105,6 +106,7 @@ class RayGRPOTrainer(RayPPOTrainer):
                 solution_str=response_str,
                 index=index,
             )
+            print('Correctness score computed: ', correctness_score)
             if self.config.reward.use_accuracy:
                 reward_components = {"correctness": correctness_score}
                 total_reward = correctness_score
@@ -146,6 +148,8 @@ class RayGRPOTrainer(RayPPOTrainer):
             experiment = self.train_dataset.experiment
             return experiment.score_answer_with_id(found_answer, entry["metadata"]["entry_id"])
         else:
+            print("[_score_output] entered")
+            print(entry)
             return data.score_answer(found_answer, entry=entry)
 
     def _create_dataloader(self):
