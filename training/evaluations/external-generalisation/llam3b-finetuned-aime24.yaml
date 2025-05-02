@@ -1,0 +1,19 @@
+# Model configuration
+model_path: ../utils/llama_external_800 # Change to the smaller model
+max_tokens: 2048  # From max_response_length in training config
+temperature: 0.6  # Lower temperature for more focused responses
+top_p: 0.9  # From rollout top_p
+developer_prompt: DeepSeekZero
+developer_role: system  # Standard role for system prompts
+
+# Output configuration
+output_dir: results
+save_metadata: true
+save_full_results: true
+eval_repeats: 50
+
+# Categories and datasets to evaluate
+categories:
+  - category: reasoning
+    datasets:
+      - dataset: "hf://datasets/Maxwell-Jia/AIME_2024/aime_2024_problems.parquet"
