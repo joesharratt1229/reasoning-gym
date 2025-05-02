@@ -4,8 +4,6 @@ reasoning_gym:
   datasets:
     complex_arithmetic:
         weight: 1
-    intermediate_integration:
-      weight: 1
     polynomial_equations:
       weight: 1
     polynomial_multiplication:
@@ -82,7 +80,7 @@ actor_rollout_ref:
       lr_warmup_steps_ratio: 0.  # the total steps will be injected during runtime
       min_lr_ratio: null   # only useful for warmup with cosine
       warmup_style: constant  # select from constant/cosine
-      total_training_steps: 500  # must be override by program
+      total_training_steps: 800  # must be override by program
     fsdp_config:
       wrap_policy:
         # transformer_layer_cls_to_wrap: None
@@ -145,7 +143,7 @@ verbose: True
 trainer:
   balance_batch: True
   total_epochs: 1
-  total_training_steps: 2000
+  total_training_steps: 800
   project_name: rg-test
   experiment_name: external_benchmark_llama_3b
   logger: [ 'console', 'wandb' ]
