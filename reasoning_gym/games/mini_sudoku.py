@@ -16,7 +16,7 @@ class MiniSudokuConfig:
     """Configuration for 4x4 sudoku puzzle generation"""
 
     min_empty: int = (
-        8  # Minimum number of empty cells. Occasionally this can be violated, if removing more cells would break the puzzle's uniqueness.
+        4  # Minimum number of empty cells. Occasionally this can be violated, if removing more cells would break the puzzle's uniqueness.
     )
     max_empty: int = 12  # Maximum number of empty cells
     seed: Optional[int] = None

@@ -19,9 +19,9 @@ curriculum:
     success_threshold: 0.70
     failure_threshold: 0.10
     curricula:
-      spell_backward:
+      mini_sudoku:
         attribute_levels:
-          word_len: 0
+          empty: 0
 reward:
   use_accuracy: True
   secondary_rewards:
@@ -137,7 +137,7 @@ trainer:
   total_epochs: 1
   total_training_steps: 400
   project_name: reasoning_gym
-  experiment_name: spell_backward_curriculum
+  experiment_name: mini_sudoku_curriculum
   logger: [ 'console', 'wandb' ]
   val_generations_to_log_to_wandb: 0
   nnodes: 1

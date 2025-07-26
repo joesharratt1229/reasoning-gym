@@ -10,8 +10,13 @@ reasoning_gym:
   dataset_size: 20000
   developer_prompt: DeepSeekZero
   datasets:
+      spell_backward:
+        weight: 0.33
+        config:
+          min_word_len: 3
+          max_word_len: 10
 curriculum:
-    enabled: True
+    enabled: False
     schedule:
       automatic: False
       update_steps: 30 # automatic curriculum updating after 50 steps
@@ -137,7 +142,7 @@ trainer:
   total_epochs: 1
   total_training_steps: 400
   project_name: reasoning_gym
-  experiment_name: spell_backward_curriculum
+  experiment_name: spell_backward_non_curriculum
   logger: [ 'console', 'wandb' ]
   val_generations_to_log_to_wandb: 0
   nnodes: 1
