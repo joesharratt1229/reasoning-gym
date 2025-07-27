@@ -13,7 +13,7 @@ def main(fsdp_checkpoint_path,
          huggingface_model_path, 
          output_path, 
          push_to_hub=True, 
-         hub_token='[REDACTED]', 
+         hub_token='', 
          private=True):
     state_dict = defaultdict(list)
 
