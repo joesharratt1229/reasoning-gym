@@ -378,6 +378,9 @@ class RayGRPOTrainer(RayPPOTrainer):
                             ) and (grouped_scores[dataset_name]["total_samples"] >= self.config.curriculum.last_k):
                                 print(f"Decreasing difficulty for dataset: {dataset_name} (success rate: {grouped_scores[dataset_name]['results']:.2f}, samples: {grouped_scores[dataset_name]['total_samples']})")
                                 self.train_dataset.update_experiment_difficulty(dataset_name, method="decrement")
+                            else:
+                                print(self.train_dataset.aggregate(last_n=self.config.curriculum.last_k))
+                                print(len(self.train_dataset.experiment.score_board.scores['count_primes']))
 
                 metrics.update(compute_data_metrics(batch=batch, use_critic=self.use_critic))
                 metrics.update(compute_timing_metrics(batch=batch, timing_raw=timing_raw))
@@ -392,3 +395,4 @@ class RayGRPOTrainer(RayPPOTrainer):
 
                 self.global_steps += 1
                 gc.collect()
+                

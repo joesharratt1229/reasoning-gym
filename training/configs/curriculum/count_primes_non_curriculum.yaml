@@ -10,11 +10,11 @@ reasoning_gym:
   dataset_size: 20000
   developer_prompt: DeepSeekZero
   datasets:
-      mini_sudoku:
-            weight: 1
-            config:
-              min_n: 100
-              max_n: 5000
+      count_primes:
+        weight: 1
+        config:
+          min_n: 100
+          max_n: 5000
 curriculum:
     enabled: False
     schedule:
@@ -24,9 +24,10 @@ curriculum:
     success_threshold: 0.70
     failure_threshold: 0.10
     curricula:
-      mini_sudoku:
+      count_primes:
         attribute_levels:
-          empty: 0
+          n: 0
+
 reward:
   use_accuracy: True
   secondary_rewards:
@@ -142,7 +143,7 @@ trainer:
   total_epochs: 1
   total_training_steps: 300
   project_name: reasoning_gym
-  experiment_name: mini_sudoku_non_curriculum
+  experiment_name: count_primes_non_curriculum
   logger: [ 'console', 'wandb' ]
   val_generations_to_log_to_wandb: 0
   nnodes: 1

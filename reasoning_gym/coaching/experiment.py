@@ -109,4 +109,7 @@ class CurriculumExperiment(Experiment):
             self.curricula[dataset_name].decrement_global_level()
 
         config = self.curricula[dataset_name].get_global_level()
+        print('Current config: ', config)
         self.composite.update_dataset_config(dataset_name, config)
+        config = self.curricula[dataset_name].get_global_level()
+        print('Updated config: ', config)
