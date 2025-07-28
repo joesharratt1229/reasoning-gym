@@ -82,7 +82,7 @@ class LocalModelEvaluator:
         self.verbose = verbose
 
         # Load model and tokenizer
-        self.llm = LLM(model=model_path)
+        self.llm = LLM(model=model_path, dtype="bfloat16")
         self.tokenizer = self.llm.get_tokenizer()
         self.sampling_params = SamplingParams(
             temperature=config.temperature,

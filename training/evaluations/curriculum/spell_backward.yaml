@@ -1,0 +1,38 @@
+model_path: Qwen/Qwen2.5-3B-Instruct   # Default model path
+# model_path: /workspace/reasoning-gym/training/qwen3b_knights-knaves_noncurriculum
+# model_path: /workspace/reasoning-gym/training/qwen3b_knights-knaves_curriculum
+
+max_tokens: 2048  # From max_response_length in training config
+top_p: 1.0
+temperature: 1.0  #
+
+developer_prompt: DeepSeekZero
+developer_role: system
+
+output_dir: results
+save_metadata: true
+save_full_results: true
+eval_repeats: 3
+
+categories:
+  - category: algorithmic
+    datasets:
+      - dataset: spell_backward
+        size: 100
+        seed: 42
+        params:
+          min_word_len: 3  # Minimum word length
+          max_word_len: 10 
+          data_file: holdout_words.txt
+      - dataset: mini_sudoku
+        size: 100
+        seed: 42
+        params:
+          min_empty: 4
+          max_empty: 12   
+      - dataset: count_primes
+        size: 100
+        seed: 42
+        params:
+          min_n: 100
+          max_n: 5000

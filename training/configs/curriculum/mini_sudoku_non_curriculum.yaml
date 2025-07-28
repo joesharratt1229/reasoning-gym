@@ -13,8 +13,8 @@ reasoning_gym:
       mini_sudoku:
             weight: 1
             config:
-              min_n: 100
-              max_n: 5000
+              min_empty: 4
+              max_empty: 12
 curriculum:
     enabled: False
     schedule:
