@@ -36,18 +36,42 @@ class SpellBackwardDataset(ProceduralDataset):
 
         # Load and preprocess text
         text = read_data_file(self.config.data_file)
-        self.words = [
-            word.strip()
-            for word in text.splitlines()
-            if word.strip().isalnum() and config.min_word_len <= len(word.strip()) <= config.max_word_len
+        words = [
+            w.strip()
+            for w in text.splitlines()
+            if w.strip().isalpha()
+               and config.min_word_len <= len(w.strip()) <= config.max_word_len
         ]
+        seen = set()
+        unique_words = []
+        for w in words:
+            lw = w.lower()
+            if lw not in seen:
+                seen.add(lw)
+                unique_words.append(w)
+
+        if not unique_words:
+            raise ValueError("No words available with the current configuration.")
+
+        # If you need strict uniqueness across the whole virtual dataset,
+        # enforce that size does not exceed the number of unique words.
+        if config.size > len(unique_words):
+            raise ValueError(
+                f"Requested size={config.size} exceeds available unique words={len(unique_words)}."
+            )
+
+        # Create a deterministic permutation using the dataset seed
+        rng = Random(config.seed or 0)
+        rng.shuffle(unique_words)
+
+        self.words = unique_words
 
     def __getitem__(self, idx: int) -> dict:
         """Generate a single spell backward task"""
         rng = Random(self.seed + idx)
 
         # Select random word
-        word = rng.choice(self.words)
+        word = self.words[idx]  # relies on validate above that size <= len(words)
         answer = word[::-1]
 
         return {

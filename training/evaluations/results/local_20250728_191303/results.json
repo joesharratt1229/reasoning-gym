@@ -1,0 +1,1184 @@
+{
+  "metadata": {
+    "timestamp": "2025-07-28T19:12:42.535526",
+    "model": "joesharratt29/spell_backward_curriculum",
+    "device": "cuda:0",
+    "duration_seconds": 21.392325,
+    "max_tokens": 2048,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "eval_repeats": 3
+  },
+  "categories": [
+    {
+      "name": "algorithmic",
+      "datasets": [
+        {
+          "name": "spell_backward",
+          "category": "algorithmic",
+          "average_score": 0.6933333333333335,
+          "total_examples": 50,
+          "config": {
+            "min_word_len": 3,
+            "max_word_len": 3,
+            "data_file": "holdout_words.txt",
+            "size": 50,
+            "seed": 42
+          },
+          "results": [
+            {
+              "question": "Spell this word backward (example: sun -> nus): Mwa",
+              "expected_answer": "awM",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "awM",
+                  "full_model_response": "<think>To backward spell Mwa, we need to reverse the order of its letters.</think>\n<answer>awM</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "awM",
+                  "full_model_response": "<think>To backward spell Mwa, I need to reverse the order of its letters.</think>\n<answer>awM</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "AWM",
+                  "full_model_response": "<think>To backward spell MWA, we need to reverse the order of its letters.</think>\n<answer>AWM</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): twa",
+              "expected_answer": "awt",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "alSwT",
+                  "full_model_response": "<think>To backward spell twa, I need to reverse the order of its letters.</think>\n<answer>alSwT</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "aiT",
+                  "full_model_response": "<think>To backward spell twa, I need to reverse the order of its letters.</think>\n<answer>aiT</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "aiT",
+                  "full_model_response": "<think>To backward spell twa, I need to reverse the order of its letters.</think>\n<answer>aiT</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): kou",
+              "expected_answer": "uok",
+              "best_score": 1.0,
+              "mean_score": 0.6666666666666666,
+              "completions": [
+                {
+                  "model_answer": "uoK",
+                  "full_model_response": "<think>To backward spell kou, I need to reverse the order of its letters.</think>\n<answer>uoK</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "uoK",
+                  "full_model_response": "<think>To backward spell kou, I need to reverse the order of its letters.</think>\n<answer>uoK</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "uLOk",
+                  "full_model_response": "<think>To backward spell kou, I need to reverse the order of its letters.</think>\n<answer>uLOk</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): dim",
+              "expected_answer": "mid",
+              "best_score": 1.0,
+              "mean_score": 0.3333333333333333,
+              "completions": [
+                {
+                  "model_answer": "niM",
+                  "full_model_response": "<think>To backward spell dim, I need to reverse the letters.</think>\n<answer>niM</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "miD",
+                  "full_model_response": "<think>To backward spell dim, I need to reverse the letters.</think>\n<answer>miD</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "nmI",
+                  "full_model_response": "<think>To backward spell dim, I need to reverse the letters.</think>\n<answer>nmI</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): gun",
+              "expected_answer": "nug",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "nuG",
+                  "full_model_response": "<think>To backward spell gun, I need to reverse the order of its letters.</think>\n<answer>nuG</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "nuG",
+                  "full_model_response": "<think>To backward spell gun, I need to reverse the order of its letters.</think>\n<answer>nuG</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "nuG",
+                  "full_model_response": "<think>To backward spell gun, I need to reverse the order of its letters.</think>\n<answer>nuG</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): mal",
+              "expected_answer": "lam",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "laM",
+                  "full_model_response": "<think>To backward spell mal, I need to reverse the letters.</think>\n<answer>laM</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "laM",
+                  "full_model_response": "<think>To backward spell mal, I need to reverse the order of its letters.</think>\n<answer>laM</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "laM",
+                  "full_model_response": "<think>To backward spell mal, I need to reverse the letters.</think>\n<answer>laM</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): wae",
+              "expected_answer": "eaw",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "eAW",
+                  "full_model_response": "<think>To backward spell wae, I need to reverse the order of its letters.</think>\n<answer>eAW</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "eAW",
+                  "full_model_response": "<think>To backward spell wae, I need to reverse the order of its letters.</think>\n<answer>eAW</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "eAW",
+                  "full_model_response": "<think>To backward spell wae, I need to reverse the order of its letters.</think>\n<answer>eAW</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): led",
+              "expected_answer": "del",
+              "best_score": 1.0,
+              "mean_score": 0.6666666666666666,
+              "completions": [
+                {
+                  "model_answer": "deLr",
+                  "full_model_response": "<think>To backward spell led, I need to reverse the order of its letters.</think>\n<answer>deLr</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "deL",
+                  "full_model_response": "<think>To backward spell led, I need to reverse the letters.</think>\n<answer>deL</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "deL",
+                  "full_model_response": "<think>To backward spell led, I need to reverse the letters.</think>\n<answer>deL</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): hie",
+              "expected_answer": "eih",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "eiH",
+                  "full_model_response": "<think>To backward spell hie, I need to reverse the order of its letters.</think>\n<answer>eiH</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "eiH",
+                  "full_model_response": "<think>To backward spell hie, I need to reverse the order of its letters.</think>\n<answer>eiH</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "eiH",
+                  "full_model_response": "<think>To backward spell hie, I need to reverse the order of its letters.</think>\n<answer>eiH</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): nob",
+              "expected_answer": "bon",
+              "best_score": 1.0,
+              "mean_score": 0.3333333333333333,
+              "completions": [
+                {
+                  "model_answer": "boN",
+                  "full_model_response": "<think>To backward spell nob, I need to reverse the order of its letters.</think>\n<answer>boN</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "baLO",
+                  "full_model_response": "<think>To backward spell nob, I need to reverse the order of its letters.</think>\n<answer>baLO</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "baLo",
+                  "full_model_response": "<think>To backward spell nob, I need to reverse the order of its letters.</think>\n<answer>baLo</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): bes",
+              "expected_answer": "seb",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "seB",
+                  "full_model_response": "<think>To backward spell bes, I need to reverse the order of its letters.</think>\n<answer>seB</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "seB",
+                  "full_model_response": "<think>To backward spell bes, I need to reverse the order of its letters.</think>\n<answer>seB</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "seB",
+                  "full_model_response": "<think>To backward spell bes, I need to reverse the letters.</think>\n<answer>seB</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): yea",
+              "expected_answer": "aey",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "aeY",
+                  "full_model_response": "<think>To backward spell yea, I need to reverse the order of its letters.</think>\n<answer>aeY</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "aeY",
+                  "full_model_response": "<think>To backward spell yea, I need to reverse the order of its letters.</think>\n<answer>aeY</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "aeY",
+                  "full_model_response": "<think>To backward spell yea, I need to reverse the order of its letters.</think>\n<answer>aeY</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): hei",
+              "expected_answer": "ieh",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "ieH",
+                  "full_model_response": "<think>To backward spell hei, I need to reverse the order of its letters.</think>\n<answer>ieH</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "iEH",
+                  "full_model_response": "<think>To backward spell hei, I need to reverse the order of its letters.</think>\n<answer>iEH</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "iEH",
+                  "full_model_response": "<think>To backward spell hei, I need to reverse the order of its letters.</think>\n<answer>iEH</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): rel",
+              "expected_answer": "ler",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "leR",
+                  "full_model_response": "<think>To backward spell rel, I need to reverse the letters.</think>\n<answer>leR</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "leR",
+                  "full_model_response": "<think>To backward spell rel, I need to reverse the letters.</think>\n<answer>leR</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "leR",
+                  "full_model_response": "<think>To backward spell rel, I need to reverse the letters.</think>\n<answer>leR</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): pet",
+              "expected_answer": "tep",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "teP",
+                  "full_model_response": "<think>To backward spell pet, I need to reverse the order of its letters.</think>\n<answer>teP</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "teP",
+                  "full_model_response": "<think>To backward spell pet, I need to reverse the order of its letters.</think>\n<answer>teP</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "teP",
+                  "full_model_response": "<think>To backward spell pet, I need to reverse the order of its letters.</think>\n<answer>teP</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Tho",
+              "expected_answer": "ohT",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "oHtT",
+                  "full_model_response": "<think>To backward spell Tho, I need to reverse the letters.</think>\n<answer>oHtT</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "oHtT",
+                  "full_model_response": "<think>To backward spell Tho, I need to reverse the letters.</think>\n<answer>oHtT</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "oHtT",
+                  "full_model_response": "<think>To backward spell Tho, I need to reverse the letters.</think>\n<answer>oHtT</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Fin",
+              "expected_answer": "niF",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "NiF",
+                  "full_model_response": "<think>To backward spell FiN, we need to reverse the order of its letters.</think>\n<answer>NiF</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "niF",
+                  "full_model_response": "<think>To backward spell Fin, I need to reverse the order of its letters.</think>\n<answer>niF</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "niF",
+                  "full_model_response": "<think>To backward spell Fin, I need to reverse the letters.</think>\n<answer>niF</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): now",
+              "expected_answer": "won",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "HLoW",
+                  "full_model_response": "<think>To backward spell NOW, I need to reverse the letters.</think>\n<answer>HLoW</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "HLoW",
+                  "full_model_response": "<think>To backward spell NOW, I need to reverse the letters.</think>\n<answer>HLoW</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "HLoW",
+                  "full_model_response": "<think>To backward spell NOW, I need to reverse the order of its letters.</think>\n<answer>HLoW</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): fey",
+              "expected_answer": "yef",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "yeF",
+                  "full_model_response": "<think>To backward spell fey, I need to reverse the order of its letters.</think>\n<answer>yeF</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "yeF",
+                  "full_model_response": "<think>To backward spell fey, I need to reverse the order of its letters.</think>\n<answer>yeF</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "yeF",
+                  "full_model_response": "<think>To backward spell fey, I need to reverse the order of its letters.</think>\n<answer>yeF</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): jib",
+              "expected_answer": "bij",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "biJ",
+                  "full_model_response": "<think>To backward spell jib, I need to reverse the order of its letters.</think>\n<answer>biJ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "biJ",
+                  "full_model_response": "<think>To backward spell jib, I need to reverse the order of its letters.</think>\n<answer>biJ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "biJ",
+                  "full_model_response": "<think>To backward spell jib, I need to reverse the order of its letters.</think>\n<answer>biJ</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): nap",
+              "expected_answer": "pan",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "paN",
+                  "full_model_response": "<think>To backward spell nap, I need to reverse the order of its letters.</think>\n<answer>paN</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "paN",
+                  "full_model_response": "<think>To backward spell nap, I need to reverse the order of its letters.</think>\n<answer>paN</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "paN",
+                  "full_model_response": "<think>To backward spell nap, I need to reverse the order of its letters.</think>\n<answer>paN</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): oft",
+              "expected_answer": "tfo",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "ttOF",
+                  "full_model_response": "<think>To backward spell oft, I need to reverse the letters.</think>\n<answer>ttOF</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "ttOF",
+                  "full_model_response": "<think>To backward spell oft, I need to reverse the letters.</think>\n<answer>ttOF</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "tfOt",
+                  "full_model_response": "<think>To backward spell oft, I need to reverse the order of its letters.</think>\n<answer>tfOt</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): bog",
+              "expected_answer": "gob",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "goB",
+                  "full_model_response": "<think>To backward spell bog, I need to reverse the letters.</think>\n<answer>goB</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "goB",
+                  "full_model_response": "<think>To backward spell bog, I need to reverse the letters.</think>\n<answer>goB</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "goB",
+                  "full_model_response": "<think>To backward spell bog, I need to reverse the order of its letters.</think>\n<answer>goB</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): aid",
+              "expected_answer": "dia",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "diA",
+                  "full_model_response": "<think>To backward spell aid, I need to reverse the letters.</think>\n<answer>diA</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "diA",
+                  "full_model_response": "<think>To backward spell aid, I need to reverse the order of its letters.</think>\n<answer>diA</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "DIa",
+                  "full_model_response": "<think>To backward spell AID, I need to reverse the order of its letters.</think>\n<answer>DIa</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): tji",
+              "expected_answer": "ijt",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "iJt",
+                  "full_model_response": "<think>To backward spell tji, I need to reverse the order of its letters.</think>\n<answer>iJt</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "iJT",
+                  "full_model_response": "<think>To backward spell tji, I need to reverse the order of its letters.</think>\n<answer>iJT</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "iJT",
+                  "full_model_response": "<think>To backward spell tji, I need to reverse the order of its letters.</think>\n<answer>iJT</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): rea",
+              "expected_answer": "aer",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "aeR",
+                  "full_model_response": "<think>To backward spell rea, I need to reverse the order of its letters.</think>\n<answer>aeR</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "aeR",
+                  "full_model_response": "<think>To backward spell rea, I need to reverse the order of its letters.</think>\n<answer>aeR</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "aeR",
+                  "full_model_response": "<think>To backward spell rea, I need to reverse the order of its letters.</think>\n<answer>aeR</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Bud",
+              "expected_answer": "duB",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "duB",
+                  "full_model_response": "<think>To backward spell Bud, I need to reverse the letters.</think>\n<answer>duB</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "dUb",
+                  "full_model_response": "<think>To backward spell Bud, I need to reverse the letters.</think>\n<answer>dUb</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "duB",
+                  "full_model_response": "<think>To backward spell Bud, I need to reverse the letters.</think>\n<answer>duB</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): pow",
+              "expected_answer": "wop",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "woP",
+                  "full_model_response": "<think>To backward spell pow, we need to reverse the order of its letters.</think>\n<answer>woP</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "woP",
+                  "full_model_response": "<think>To backward spell pow, I need to reverse the order of its letters.</think>\n<answer>woP</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "woP",
+                  "full_model_response": "<think>To backward spell pow, I need to reverse the order of its letters.</think>\n<answer>woP</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): mum",
+              "expected_answer": "mum",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "nuM",
+                  "full_model_response": "<think>To backward spell mum, I need to reverse the order of its letters.</think>\n<answer>nuM</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "nuM",
+                  "full_model_response": "<think>To backward spell mum, I need to reverse the letters.</think>\n<answer>nuM</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "nuM",
+                  "full_model_response": "<think>To backward spell mum, I need to reverse the letters.</think>\n<answer>nuM</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): bot",
+              "expected_answer": "tob",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "toB",
+                  "full_model_response": "<think>To backward spell bot, I need to reverse the order of its letters.</think>\n<answer>toB</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "toB",
+                  "full_model_response": "<think>To backward spell bot, I need to reverse the letters.</think>\n<answer>toB</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "toB",
+                  "full_model_response": "<think>To backward spell bot, I need to reverse the letters.</think>\n<answer>toB</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Mon",
+              "expected_answer": "noM",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "nOm",
+                  "full_model_response": "<think>To backward spell Mon, I need to reverse the order of its letters.</think>\n<answer>nOm</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "nOm",
+                  "full_model_response": "<think>To backward spell Mon, I need to reverse the letters.</think>\n<answer>nOm</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "nOm",
+                  "full_model_response": "<think>To backward spell Mon, I need to reverse the order of its letters.</think>\n<answer>nOm</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): zac",
+              "expected_answer": "caz",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "caZ",
+                  "full_model_response": "<think>To backward spell zac, I need to reverse the order of its letters.</think>\n<answer>caZ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "caZ",
+                  "full_model_response": "<think>To backward spell zac, I need to reverse the order of its letters.</think>\n<answer>caZ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "caZ",
+                  "full_model_response": "<think>To backward spell zac, I need to reverse the order of its letters.</think>\n<answer>caZ</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Ree",
+              "expected_answer": "eeR",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "eeRE",
+                  "full_model_response": "<think>To backward spell Ree, I need to reverse the letters.</think>\n<answer>eeRE</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "eeRE",
+                  "full_model_response": "<think>To backward spell Ree, I need to reverse the letters.</think>\n<answer>eeRE</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "eeRe",
+                  "full_model_response": "<think>To backward spell Ree, I need to reverse the letters.</think>\n<answer>eeRe</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Ben",
+              "expected_answer": "neB",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "nEsB",
+                  "full_model_response": "<think>To backward spell Ben, I need to reverse the letters.</think>\n<answer>nEsB</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "neWb",
+                  "full_model_response": "<think>To backward spell Ben, I need to reverse the letters.</think>\n<answer>neWb</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "nEsB",
+                  "full_model_response": "<think>To backward spell Ben, I need to reverse the letters.</think>\n<answer>nEsB</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): sha",
+              "expected_answer": "ahs",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "ahS",
+                  "full_model_response": "<think>To backward spell sha, I need to reverse the order of its letters.</think>\n<answer>ahS</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "ahS",
+                  "full_model_response": "<think>To backward spell sha, I need to reverse the order of its letters.</think>\n<answer>ahS</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "ahS",
+                  "full_model_response": "<think>To backward spell sha, I need to reverse the order of its letters.</think>\n<answer>ahS</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): jot",
+              "expected_answer": "toj",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "toJ",
+                  "full_model_response": "<think>To backward spell jot, I need to reverse the order of its letters.</think>\n<answer>toJ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "toJ",
+                  "full_model_response": "<think>To backward spell jot, I need to reverse the order of its letters.</think>\n<answer>toJ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "toJ",
+                  "full_model_response": "<think>To backward spell jot, we need to reverse the order of its letters.</think>\n<answer>toJ</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Huk",
+              "expected_answer": "kuH",
+              "best_score": 1.0,
+              "mean_score": 0.6666666666666666,
+              "completions": [
+                {
+                  "model_answer": "KUH",
+                  "full_model_response": "<think>To backward spell HUK, I need to reverse the order of its letters.</think>\n<answer>KUH</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "KUH",
+                  "full_model_response": "<think>To backward spell HUK, I need to reverse the order of its letters.</think>\n<answer>KUH</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "KUhT",
+                  "full_model_response": "<think>To backward spell HUK, I need to reverse the order of its letters.</think>\n<answer>KUhT</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Jos",
+              "expected_answer": "soJ",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "ssOJ",
+                  "full_model_response": "<think>To backward spell Jos, I need to reverse the letters.</think>\n<answer>ssOJ</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "ssOJ",
+                  "full_model_response": "<think>To backward spell Jos, I need to reverse the letters.</think>\n<answer>ssOJ</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "ssOJ",
+                  "full_model_response": "<think>To backward spell Jos, I need to reverse the letters.</think>\n<answer>ssOJ</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Pia",
+              "expected_answer": "aiP",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "aiP",
+                  "full_model_response": "<think>To backward spell Pia, I need to reverse the order of its letters.</think>\n<answer>aiP</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "aIP",
+                  "full_model_response": "<think>To backward spell Pia, I need to reverse the order of its letters.</think>\n<answer>aIP</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "AIp",
+                  "full_model_response": "<think>To backward spell PIA, I need to reverse the order of its letters.</think>\n<answer>AIp</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Jef",
+              "expected_answer": "feJ",
+              "best_score": 1.0,
+              "mean_score": 0.6666666666666666,
+              "completions": [
+                {
+                  "model_answer": "FEJ",
+                  "full_model_response": "<think>To backward spell JEF, I need to reverse the order of its letters.</think>\n<answer>FEJ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "fEJ",
+                  "full_model_response": "<think>To backward spell Jef, I need to reverse the order of its letters.</think>\n<answer>fEJ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "rEFj",
+                  "full_model_response": "<think>To backward spell Jef, I need to reverse the order of its letters.</think>\n<answer>rEFj</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): Abu",
+              "expected_answer": "ubA",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "uBaA",
+                  "full_model_response": "<think>To backward spell Abu, I need to reverse the order of its letters.</think>\n<answer>uBaA</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "uBaA",
+                  "full_model_response": "<think>To backward spell Abu, I need to reverse the order of its letters.</think>\n<answer>uBaA</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "uBAr",
+                  "full_model_response": "<think>To backward spell Abu, I need to reverse the order of its letters.</think>\n<answer>uBAr</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): duo",
+              "expected_answer": "oud",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "oAuD",
+                  "full_model_response": "<think>To backward spell duo, I need to reverse the order of its letters.</think>\n<answer>oAuD</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "oAuD",
+                  "full_model_response": "<think>To backward spell duo, I need to reverse the order of its letters.</think>\n<answer>oAuD</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "OOD",
+                  "full_model_response": "<think>To backward spell DOO, we need to reverse the order of its letters.</think>\n<answer>OOD</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): jet",
+              "expected_answer": "tej",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "teJ",
+                  "full_model_response": "<think>To backward spell jet, I need to reverse the order of its letters.</think>\n<answer>teJ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "teJ",
+                  "full_model_response": "<think>To backward spell jet, I need to reverse the order of its letters.</think>\n<answer>teJ</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "teJ",
+                  "full_model_response": "<think>To backward spell jet, I need to reverse the order of its letters.</think>\n<answer>teJ</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): poi",
+              "expected_answer": "iop",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "iLo",
+                  "full_model_response": "<think>To backward spell poi, I need to reverse the order of its letters.</think>\n<answer>iLo</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "iLo",
+                  "full_model_response": "<think>To backward spell poi, I need to reverse the order of its letters.</think>\n<answer>iLo</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "iLo",
+                  "full_model_response": "<think>To backward spell poi, I need to reverse the order of its letters.</think>\n<answer>iLo</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): mau",
+              "expected_answer": "uam",
+              "best_score": 0.0,
+              "mean_score": 0.0,
+              "completions": [
+                {
+                  "model_answer": "auM",
+                  "full_model_response": "<think>To backward spell mau, I need to reverse the order of its letters.</think>\n<answer>auM</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "uAr",
+                  "full_model_response": "<think>To backward spell mau, I need to reverse the order of its letters.</think>\n<answer>uAr</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "auM",
+                  "full_model_response": "<think>To backward spell mau, I need to reverse the order of its letters.</think>\n<answer>auM</answer>",
+                  "score": 0.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): nep",
+              "expected_answer": "pen",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "pEN",
+                  "full_model_response": "<think>To backward spell nep, I need to reverse the letters.</think>\n<answer>pEN</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "peN",
+                  "full_model_response": "<think>To backward spell nep, I need to reverse the order of its letters.</think>\n<answer>peN</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "peN",
+                  "full_model_response": "<think>To backward spell nep, I need to reverse the letters.</think>\n<answer>peN</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): joe",
+              "expected_answer": "eoj",
+              "best_score": 1.0,
+              "mean_score": 0.3333333333333333,
+              "completions": [
+                {
+                  "model_answer": "ejO",
+                  "full_model_response": "<think>To backward spell joe, I need to reverse the order of its letters.</think>\n<answer>ejO</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "ELoJ",
+                  "full_model_response": "<think>To backward spell JOE, I need to reverse the order of its letters.</think>\n<answer>ELoJ</answer>",
+                  "score": 0.0
+                },
+                {
+                  "model_answer": "eOJ",
+                  "full_model_response": "<think>To backward spell joe, I need to reverse the letters.</think>\n<answer>eOJ</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): fam",
+              "expected_answer": "maf",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "maF",
+                  "full_model_response": "<think>To backward spell fam, I need to reverse the order of its letters.</think>\n<answer>maF</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "maF",
+                  "full_model_response": "<think>To backward spell fam, I need to reverse the order of its letters.</think>\n<answer>maF</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "maF",
+                  "full_model_response": "<think>To backward spell fam, I need to reverse the order of its letters.</think>\n<answer>maF</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): bis",
+              "expected_answer": "sib",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "siB",
+                  "full_model_response": "<think>To backward spell bis, I need to reverse the order of its letters.</think>\n<answer>siB</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "siB",
+                  "full_model_response": "<think>To backward spell bis, I need to reverse the order of its letters.</think>\n<answer>siB</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "siB",
+                  "full_model_response": "<think>To backward spell bis, I need to reverse the letters.</think>\n<answer>siB</answer>",
+                  "score": 1.0
+                }
+              ]
+            },
+            {
+              "question": "Spell this word backward (example: sun -> nus): yez",
+              "expected_answer": "zey",
+              "best_score": 1.0,
+              "mean_score": 1.0,
+              "completions": [
+                {
+                  "model_answer": "zeY",
+                  "full_model_response": "<think>To backward spell yez, I need to reverse the order of its letters.</think>\n<answer>zeY</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "zeY",
+                  "full_model_response": "<think>To backward spell yez, I need to reverse the order of its letters.</think>\n<answer>zeY</answer>",
+                  "score": 1.0
+                },
+                {
+                  "model_answer": "zeY",
+                  "full_model_response": "<think>To backward spell yez, I need to reverse the order of its letters.</think>\n<answer>zeY</answer>",
+                  "score": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
